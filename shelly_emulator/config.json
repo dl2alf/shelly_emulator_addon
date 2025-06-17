@@ -1,0 +1,21 @@
+{
+  "name": "Shelly Emulator",
+  "version": "1.0.0",
+  "slug": "shelly_emulator",
+  "description": "Emulate a Shelly smart counter based on Tasmota data",
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "tasmota_ip": "192.168.1.50"
+  },
+  "schema": {
+    "tasmota_ip": "str"
+  },
+  "arch": ["amd64", "armv7", "arm64"],
+  "ports": {
+    "80/tcp": 8081
+  },
+  "map": [],
+  "host_network": false,
+  "privileged": false
+}
